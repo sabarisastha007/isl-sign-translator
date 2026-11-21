@@ -1,0 +1,31 @@
+{
+  "name": "isl-sign-translator",
+  "version": "1.0.0",
+  "description": "AI-Powered Multilingual Sign Language Translation System (prototype)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/run-all-tests.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "node scripts/copy-wasm.mjs",
+    "prebuild": "node scripts/copy-wasm.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "@tensorflow/tfjs": "^4.22.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs-converter": "^4.22.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1"
+  }
+}
